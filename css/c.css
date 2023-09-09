@@ -1,0 +1,90 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+ul{
+  list-style: none;
+}
+
+:root{
+  --section-padding: 60px;
+  --first-color:#008080;
+  --second-color:#024f4f;
+  --font-family: "cairo" , arial;
+  --font-family1: "work-sans" , arial;
+}
+
+body{
+  font-family: "cairo" , sans-serif;
+  background-color: #024f4f;
+}
+
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px){
+  .container{
+      width: 750px;
+  }
+}
+
+@media (min-width: 992px){
+  .container{
+      width: 970px;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+      width: 1170px;
+  }
+}
+
+div.lessons{
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 35px;
+}
+.lessons a{
+  width:100%;
+  display:flex;
+  justify-content: center;
+}
+.lessons h4{
+  color: white;
+  padding: 15px 13px;
+  width: 90%;
+  text-align: center;
+  border-radius: 30px 15px 15px 8px;
+  background-color: white;
+  color: var(--first-color);
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+}
+.lessons h4 span{
+  position: absolute;
+  left: 0px;
+  background-color: #ff914c;
+  padding: 10px 11px;
+  color: white;
+  border-radius: 11px 1px 35px 1px;
+  top: 0;
+  height: 84%;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
