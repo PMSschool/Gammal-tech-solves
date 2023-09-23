@@ -11,18 +11,19 @@
   <link rel="stylesheet" href="css/loading.css">
   <link rel="stylesheet" href="css/c.css">
 </head>
-<body>
+<body id = "main">
   <header>
     <img src="https://uploads-ssl.webflow.com/5d2cb3382be6ba1741dc013c/64e0fc5dfca9a83bf668bba2_New%20Logo%20Top%20Big.webp" alt="">
     <div class="links">
-      <div class="icon">
+      <div class="openbtn" onclick="openNav()">
         <span class="one"></span>
         <span class="two"></span>
         <span class="three"></span>
       </div>
       <nav>
-        <ul>
-          <li><a class="active" href="#">Home</a></li>
+        <ul id="mySidebar" class="sidebar">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
           <li><a href="#">Courses</a></li>
           <li><a href="#">FAQ</a></li>
           <li><a href="#">Contact</a></li>
@@ -31,5 +32,6 @@
     </div>
   </header>
   <script src="js/c-programming.js"></script>
+  <script src="js/solve.js"></script>
 </body>
 </html>
