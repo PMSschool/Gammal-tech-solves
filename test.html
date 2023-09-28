@@ -1,8 +1,28 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <button onclick="copyText()">Copy</button>
+  <br />
+    
+  <h1>Copied Text:</h1><br />
+  <textarea id="textbox"></textarea>
+  <pre>
+    mostafa
+  </pre>
+    
+  <script>
+    let textc = document .querySelector("pre");
+    console.log(textc.textContent)
+      function copyText() {
+    
+          /* Copy text into clipboard */
+          navigator.clipboard.writeText
+              (textc.textContent);
+      }
+  </script>
 
-  <pre><code>WINDOWS REGISTRY EDITOR VERSION 5.00
+
+  <!-- <pre><code>WINDOWS REGISTRY EDITOR VERSION 5.00
 
     [HKEY_LOCAL_MACHINE\SOFTWARE\MICROSOFT\WINDOWS NT\CURRENTVERSION\APPCOMPATFLAGS\LAYERS]
     "C:\\EGAMES\\MINI CAR RACING\\GAME\\EGAMES.EXE"="$ DWM8AND16BITMITIGATION 8AND16BITAGGREGATEBLTS LAYER_FORCEDIRECTDRAWEMULATION HIGHDPIAWARE DXPRIMARYEMULATION"
@@ -110,7 +130,7 @@ ol.linenums {
 }
 /*]]>*/
     </style>
-<script src="js/solve.js"></script>
+<script src="js/solve.js"></script> -->
 
 </body>
 </html>

@@ -1,0 +1,84 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+ul{
+  list-style: none;
+}
+
+:root{
+  --section-padding: 60px;
+  --first-color:#008080;
+  --second-color:#024f4f;
+  --third-color:#ff914c;
+  --font-family: "cairo" , arial;
+  --font-family1: "work-sans" , arial;
+}
+
+body{
+  font-family: "cairo" , sans-serif;
+  background-color: #024f4f;
+}
+
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px){
+  .container{
+      width: 750px;
+  }
+}
+
+@media (min-width: 992px){
+  .container{
+      width: 970px;
+  }
+}
+
+@media (min-width: 1200px){
+  .container{
+      width: 1170px;
+  }
+}
+
+body{
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.courses{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top:50%;
+  transform:translateY(-50%);
+  position: relative;
+}
+.courses .container ul{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  font-size: 17px;
+  text-align: center;
+  padding: 0;
+}
+.courses .container ul li {
+  background-color: #ff914c;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 30px;
+}
