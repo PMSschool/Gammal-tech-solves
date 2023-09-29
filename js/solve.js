@@ -31,3 +31,5 @@ function closeNav() {
           gt.children[i].classList.toggle("active");
         }
       }
+
+      document.querySelector(".que").height = document.querySelector(".que h4").height;

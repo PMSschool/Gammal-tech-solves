@@ -16,6 +16,7 @@ ul{
   --section-padding: 60px;
   --first-color:#008080;
   --second-color:#024f4f;
+  --third-color:#ff914c;
   --font-family: "cairo" , arial;
   --font-family1: "work-sans" , arial;
 }
@@ -54,37 +55,66 @@ body{
 
 @media (min-width:768px){
   .gt-qu{
-    margin: 15%;
+    margin: 0 15%;
     padding: 150px 15px 15px 15px;
   }
+}
+/* .gt-qu{
+  padding-bottom: 90px; 
+} */
+.gt-qu h1.header-sec{
+  display: flex;
+  margin-bottom: 70px;
+  color: white;
+  position: relative;
+  width: fit-content;
+  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 25px;
+  box-shadow: 0 0 13px;
+}
+.gt-qu h1.header-sec::before{
+  content: "";
+  background-color: var(--third-color);
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 35px;
+}
+.gt-qu h1.header-sec::after{
+  content: "";
+  background-color: var(--third-color);
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  border-radius: 35px;
 }
 .que{
   background-color: white;
   padding: 17px;
   margin: 10px;
   border-radius: 6px;
-  height:100px;
   overflow:hidden;
 }
-.que.active{
-  height:100%;
-}
+
 .que h4{
   font-size: 17px;
   background-color: #efefef;
   padding: 10px 30px;
   border-radius: 7px;
   position: relative;
-  height: 69px;
   display: flex;
   align-items: center;
   transition: 1s;
   font-weight:bold;
-  overflow: hidden;
 }
 .que h4.ar{
   direction: rtl;
   padding:10px 20px;
+  display:none;
 }
 .que h4.ar::after{
   content: "";
@@ -93,13 +123,10 @@ body{
   position: absolute;
   background-color: var(--first-color);
   width: 4px;
-  height: 51px;
+  height: calc(100% - 20px);
   right: 7px;
   top: 10px;
 }
-/* .que h4.ar:hover::after{
-  width: 80%;
-} */
 .que h4:hover{
   color: var(--second-color);
   box-shadow: 0 0 17px -6px;
@@ -111,12 +138,17 @@ body{
   position: absolute;
   background-color: var(--first-color);
   width: 4px;
-  height: 51px;
+  height: calc(100% - 20px);
   left: 7px;
   top: 10px;
   
 }
-
+.que code{
+  display:none;
+}
+.que hr{
+  display:none;
+}
 pre{
   background-color: black;
   padding: 30px 0;
@@ -164,5 +196,16 @@ i{
 code{
   position:relative;
 }
-
+.blue{
+  color: #7a7aff;
+}
+.que.active code{
+  display: flex;
+}
+.que.active h4.ar{
+  display: flex;
+}
+.que.active hr{
+  display: flex;
+}
 /* end solve */

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>printf</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/framework.css">
+  <link rel="stylesheet" href="css/solve.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body id="main">
+  <header>
+    <img src="https://uploads-ssl.webflow.com/5d2cb3382be6ba1741dc013c/64e0fc5dfca9a83bf668bba2_New%20Logo%20Top%20Big.webp" alt="">
+    <div class="links">
+      <div class="openbtn" onclick="openNav()">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </div>
+      <nav>
+        <ul id="mySidebar" class="sidebar">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="test.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+
+  <div class="gt-qu">
+     <h1 class="header-sec">Scanf</h1>
+    <div class="que">
+      <h4 class="en"> A program that takes 4 numbers from the user and combines the first two numbers, then subtracts the third number, then multiplies it by the fourth number and prints the result.</h4>
+      <hr>
+      <h4 class="ar"> برنامج يأخذ من المستخدم 4 أرقام ويجمع الرقمين الأولين ثم يطرح الرقم الثالث ثم يضربه في الرقم الرابع ويطبع النتيجة.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>a,b,c,d;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">please, enter four numbers :</span><span class="darkcyen">\n</span><span>");</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d%d%d%d</span><span>"</span><span class="blue">,&a,&b,&c,&d</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">a = %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,a</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">b = %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,b</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">c = %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,c</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">d = %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,d</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">((a + b)-c)×d = %d</span><span>"</span><span class="blue">,((a+b)-c)*d</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en"> A program that asks a person about his age in years and then prints his age in days without leap years.</h4>
+      <hr>
+      <h4 class="ar"> برنامج يسأل الشخص عن عمره بالسنوات ثم يطبع عمره بالأيام بدون سنوات كبيسة.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>a;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">please, enter your age :</span><span class="darkcyen">\n</span><span>");</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&a</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">Your age in days : %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,a*365</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+
+    <div class="que">
+      <h4 class="en"> Program that converts weight from kg to ton (ton = 1000 kg)</h4>
+      <hr>
+      <h4 class="ar"> برنامج يحول الوزن من كجم إلى طن (الطن = 1000 كجم)</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">float </span><span>a;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">Please enter the weight in kilograms :</span><span class="darkcyen">\n</span><span>");</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%f</span><span>"</span><span class="blue">,&a</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">Weight in tons : %0.1f</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,a/1000</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en"> Each of us dreams of owning many luxurious cars. Required: A program that asks the user how many cars he owns now and how many cars he wants, then prints the rest of the cars for him.</h4>
+      <hr>
+      <h4 class="ar"> يحلم كل منا بامتلاك العديد من السيارات الفاخرة. المطلوب: برنامج يسأل المستخدم عن عدد السيارات التي يملكها الآن وكم سيارة يريد، ثم يطبع له باقي السيارات.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>a,b;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">How many cars do you own now : </span><span class="darkcyen">\n</span><span>");</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&a</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">How many cars do you want to have with you :</span><span class="darkcyen">\n</span><span>"</span><span>);</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&b</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">The rest of the cars = %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,b-a</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en"> There are a lot of students studying graphs in school and we would like to help them. Required: Write a program that takes the values of 3 variables x, y and z and then prints the x + z and the y + z in parentheses eg 5 7 8 (15, 13)</h4>
+      <hr>
+      <h4 class="ar"> هناك الكثير من الطلاب الذين يدرسون الرسوم البيانية في المدرسة ونود مساعدتهم. المطلوب: كتابة برنامج يأخذ قيم 3 متغيرات x و y و z ثم يطبع x + z و y + z بين قوسين، على سبيل المثال 5 7 8 (15، 13)</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>x,y,z;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">please, enter a 3 numbers :</span><span class="darkcyen">\n</span><span>");</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&x</span><span>);</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&y</span><span>);</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&z</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">(%d , %d)</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,x+z,z+y</span><span>);</span>
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <a href="https://www.facebook.com/gammal.tech/"><img src="img/64e265364151507013cf141b_f_logo_RGB-Blue_100.png" alt=""></a>
+    <a href="https://wa.me/+201033998844"><img src="img/647f2173ace38f4413403b96_WhatsApp.svg.png" alt=""></a>
+    <a href="https://www.tiktok.com/@gammal.tech"><img src="img/64e266856b1a89cb5200d5f1_TikTok_Icon_Black_Circle-p-500.png" alt=""></a>
+    <a href="https://www.instagram.com/gammal.tech"><img src="img/64e26b074cc90679fbbaf7a5_instagram smaller.png" alt=""></a>
+    <a href="https://www.linkedin.com/company/gammal-tech"><img src="img/64e448786043d1ebebc36d9b_LI-In-Bug.png" alt=""></a>
+    <a href="https://www.youtube.com/c/GammalTech"><img src="img/5d2f5709d5e8838266f2a375_yt_icon_rgb.png" alt=""></a>
+  </div>
+  <script src="js/solve.js"></script>
+  <script src="js/pre.js"></script>
+
+</body>
+</html>

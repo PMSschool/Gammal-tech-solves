@@ -16,6 +16,7 @@ ul{
   --section-padding: 60px;
   --first-color:#008080;
   --second-color:#024f4f;
+  --third-color:#ff914c;
   --font-family: "cairo" , arial;
   --font-family1: "work-sans" , arial;
 }
@@ -158,6 +159,7 @@ header{
   width: 100%;
   padding: 16px;
   z-index:1;
+  background-color: var(--second-color);
 }
 header ul {
   display: flex;
@@ -353,9 +355,9 @@ header ul li a {
   justify-content: center;
   align-items: center;
   gap: 18px;
-  position: relative;
   margin-top: 35px;
   width:100%;
+  position: relative;
 }
 .footer a img{
   width: 31px;
