@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>printf</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/framework.css">
+  <link rel="stylesheet" href="css/solve.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body id="main">
+  <header>
+    <img src="https://uploads-ssl.webflow.com/5d2cb3382be6ba1741dc013c/64e0fc5dfca9a83bf668bba2_New%20Logo%20Top%20Big.webp" alt="">
+    <div class="links">
+      <div class="openbtn" onclick="openNav()">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </div>
+      <nav>
+        <ul id="mySidebar" class="sidebar">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="test.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+
+  <div class="gt-qu">
+     <h1 class="header-sec">variables</h1>
+    <div class="que">
+      <h4 class="en"> A program that assigns a number in a variable and prints it, then assigns another number in the same variable and prints it.</h4>
+      <hr>
+      <h4 class="ar"> برنامج يقوم بتعيين رقم في متغير وطباعته، ثم تعيين رقم آخر في نفس المتغير وطباعته.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>a = 5;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">%d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,a</span><span>);</span>
+      <span>a = 7;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">%d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,a</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en"> A program that assigns a number in a variable and prints the variable's name and value.</h4>
+      <hr>
+      <h4 class="ar"> برنامج يقوم بتعيين رقم في متغير وطباعة اسم المتغير وقيمته.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>a = 5;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">a = %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,a</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en"> A program assigns a number in a variable, prints it, and then assigns another variable with the value of the first variable, and it must be incremented by 5</h4>
+      <hr>
+      <h4 class="ar"> يقوم البرنامج بتعيين رقم في متغير وطباعته ثم تخصيص متغير آخر بقيمة المتغير الأول ويجب زيادته بمقدار 5</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>a = 5;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">%d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,a</span><span>);</span>
+      <span class="blue">int </span><span>b = a+5;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">%d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,b</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en">Amusement program : A new amusement park has been established with a strange system.. Each person pays for the entrance ticket according to his age.. If the person is 10 years old, he pays 10 pounds, and so on.. Ahmed, Sherif and Dina went to the amusement park and wanted to know the total amount they would pay Required: Write a program that records the age of 3 people in variables and prints the amount they will pay in amusement parks on the screen.</h4>
+      <hr>
+      <h4 class="ar">البرنامج الترفيهي : تم إنشاء مدينة ملاهي جديدة بنظام عجيب .. كل شخص يدفع تذكرة الدخول حسب عمره .. إذا كان عمر الشخص 10 سنوات يدفع 10 جنيهات وهكذا .. أحمد، شريف و دينا ذهبوا إلى مدينة الملاهي وأرادو معرفة إجمالي المبلغ الذي سيدفعونه المطلوب: كتابة برنامج يسجل عمر 3 أشخاص في متغيرات ويطبع المبلغ الذي سيدفعونه في مدينة الملاهي على الشاشة.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>Ahmed = 15;</span>
+      <span class="blue">int </span><span>Sherif = 14;</span>
+      <span class="blue">int </span><span>Dina = 11;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">the amount = %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,Ahmed+Sherif+Dina</span><span>);</span>
+
+      <span>}</span>
+    </pre>
+      </code>
+    </div>
+    
+    <div class="que">
+      <h4 class="en"> Write a program that assgins a person’s age in a variable (Example: 23) and assgins the year in another variable (Example: 2022), then the program subtracts them and prints the result on the screen (Example: 1999).</h4>
+      <hr>
+      <h4 class="ar">اكتب برنامجا يحدد عمر الشخص في متغير (مثال: 23) ويحسب السنة في متغير آخر (مثال: 2022)، ثم يقوم البرنامج بطرحهم وطباعة النتيجة على الشاشة (مثال: 1999).</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>age = 23;</span>
+      <span class="blue">int </span><span>year = 2022;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">%d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,year-age</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en"> Now you know how to assigns a number in a variable, but let's do this better. Required: Write a program that assigns a number in one variable and another number in another variable and prints the two variables between them with a + sign, then print their sum at the end. Example x + y = 15.</h4>
+      <hr>
+      <h4 class="ar">الآن أنت تعرف كيفية تعيين رقم في متغير، ولكن دعونا نفعل ذلك بشكل أفضل. المطلوب: كتابة برنامج يخصص رقماً في متغير واحد ورقما آخر في متغير آخر ويطبع المتغيرين بينهما بعلامة + ثم يطبع مجموعهما في النهاية. مثال س + ص = 15.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>x = 15;</span>
+      <span class="blue">int </span><span>y = 30;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">x + y = %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,x+y</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en"> Areas program: Sharif wanted to make some modifications in his room and wanted to determine the area of the room. Required: Make a program that assigns two variables, the first for the width of the room and the second for its length, multiplying the two numbers to calculate the area and then printing the result at the end.</h4>
+      <hr>
+      <h4 class="ar">برنامج المناطق: أراد شريف إجراء بعض التعديلات في غرفته وأراد تحديد مساحة الغرفة. المطلوب: عمل برنامج يخصص متغيرين الأول لعرض الغرفة والثاني لطولها وضرب الرقمين لحساب المساحة ثم طباعة النتيجة في النهاية.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>width = 320;</span>
+      <span class="blue">int </span><span>length = 200;</span>
+      <span class="blue">int </span><span>area = width*length;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">%d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,area</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en">Program to convert meters to centimeters. Required: Write a program that assigns a number in a variable, then converts this number to centimeters and prints it.</h4>
+      <hr>
+      <h4 class="ar">برنامج تحويل الأمتار إلى سنتيمترات. المطلوب: كتابة برنامج يقوم بتعيين رقم في متغير، ثم تحويل هذا الرقم إلى سنتيمترات وطباعته.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>m = 5;</span>
+      <span class="blue">int </span><span>cm = m*100;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">%d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,cm</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en">Square Perimeter Program. Required: Write a program that assigns the side length of the square and calculates the perimeter of the square.
+      </h4>
+      <hr>
+      <h4 class="ar">برنامج محيط المربع. المطلوب: كتابة برنامج يحدد طول ضلع المربع ويحسب محيط المربع.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>length = 6;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">Perimeter square = %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,length*4</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <a href="https://www.facebook.com/gammal.tech/"><img src="img/64e265364151507013cf141b_f_logo_RGB-Blue_100.png" alt=""></a>
+    <a href="https://wa.me/+201033998844"><img src="img/647f2173ace38f4413403b96_WhatsApp.svg.png" alt=""></a>
+    <a href="https://www.tiktok.com/@gammal.tech"><img src="img/64e266856b1a89cb5200d5f1_TikTok_Icon_Black_Circle-p-500.png" alt=""></a>
+    <a href="https://www.instagram.com/gammal.tech"><img src="img/64e26b074cc90679fbbaf7a5_instagram smaller.png" alt=""></a>
+    <a href="https://www.linkedin.com/company/gammal-tech"><img src="img/64e448786043d1ebebc36d9b_LI-In-Bug.png" alt=""></a>
+    <a href="https://www.youtube.com/c/GammalTech"><img src="img/5d2f5709d5e8838266f2a375_yt_icon_rgb.png" alt=""></a>
+  </div>
+  <script src="js/solve.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+</html>
