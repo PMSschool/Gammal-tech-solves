@@ -62,7 +62,7 @@ body{
 /* .gt-qu{
   padding-bottom: 90px; 
 } */
-.gt-qu h1.header-sec{
+ h1.header-sec{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,8 +71,11 @@ body{
   margin: 0 13px 30px 13px;
   border-radius: 5px;
   box-shadow: 0 0 10px;
+  font-size: 25px;
+  padding: 10px;
+  font-weight: bold;
 }
-.gt-qu h1.header-sec::before{
+ h1.header-sec::before{
   content: "";
   background-color: var(--third-color);
   width: 4px;
@@ -81,7 +84,7 @@ body{
   left: 0;
   border-radius: 35px;
 }
-.gt-qu h1.header-sec::after{
+ h1.header-sec::after{
   content: "";
   background-color: var(--third-color);
   width: 4px;

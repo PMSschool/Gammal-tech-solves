@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>printf</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/framework.css">
+  <link rel="stylesheet" href="css/solve.css">
+  <link rel="stylesheet" href="css/index.css">
+</head>
+<body id="main">
+  <header>
+    <img src="https://uploads-ssl.webflow.com/5d2cb3382be6ba1741dc013c/64e0fc5dfca9a83bf668bba2_New%20Logo%20Top%20Big.webp" alt="">
+    <div class="links">
+      <div class="openbtn" onclick="openNav()">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+      </div>
+      <nav>
+        <ul id="mySidebar" class="sidebar">
+          <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+
+  <div class="gt-qu">
+     <h1 class="header-sec">C programming practice 1</h1>
+    <div class="que">
+      <h4 class="en">Sharif finished his high school exams, and when the result appeared, he wanted to calculate the number of grades he had lost. Required: Write a program that asks the person about his grades in 6 different subjects, assuming that each subject is out of 100, and then prints a missing score in all subjects</h4>
+      <hr>
+      <h4 class="ar"> أنهى شريف امتحانات الثانوية العامة، وعندما ظهرت النتيجة أراد أن يحسب عدد الدرجات التي فقدها. المطلوب: كتابة برنامج يسأل الشخص عن درجاته في 6 مواد مختلفة، على افتراض أن كل مادة من 100، ثم يطبع الدرجة المفقودة في جميع المواد</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>a,b,c,d,e,f;</span>
+      
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">What score did you get in physics?</span><span class="darkcyen">\n</span><span>"</span><span>);</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&a</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">What score did you get in the Arabic language subject?</span><span class="darkcyen">\n</span><span>"</span><span>);</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&b</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">What score did you get in the English language subject?</span><span class="darkcyen">\n</span><span>"</span><span>);</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&c</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">What score did you get in chemistry?</span><span class="darkcyen">\n</span><span>"</span><span>);</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&d</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">What score did you get in mathematics?</span><span class="darkcyen">\n</span><span>"</span><span>);</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&e</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">What score did you get in biology?</span><span class="darkcyen">\n</span><span>"</span><span>);</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&f</span><span>);</span>
+      <span class="blue">int </span><span>total = a+b+c+d+e+f;</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">Total scores : %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,total</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">Missing degree = 600 - %d = %d</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,total,600-total</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+    <div class="que">
+      <h4 class="en">It is necessary to read books from time to time in order to increase and increase your information. Required: Write a program that asks the user to enter the number of books he reads daily and then tells him if he continues at the same level, he will read how many books at the end of the month.</h4>
+      <hr>
+      <h4 class="ar"> من الضروري قراءة الكتب من وقت لآخر حتى تزيد وتزيد معلوماتك. المطلوب: كتابة برنامج يطلب من المستخدم إدخال عدد الكتب التي يقرأها يوميا ثم يخبره إذا استمر على نفس المستوى فسوف يقرأ كم كتابا في نهاية الشهر.</h4>
+      <hr>
+      <code >
+        <i class="fa-regular fa-copy"></i><span class="copy">Copied</span>
+        <pre>
+    <span class="darkcyen">#include</span><span class="burlywood">&lt;stdio.h&gt;</span>
+
+    <span>int main() {</span>
+      <span class="blue">int </span><span>a;</span>
+      
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">Enter the number of books you read daily :</span><span class="darkcyen">\n</span><span>"</span><span>);</span>
+      <span class="burlywood">scanf</span><span class="">("</span><span class="light-brown">%d</span><span>"</span><span class="blue">,&a</span><span>);</span>
+      <span class="burlywood">printf</span><span class="">("</span><span class="light-brown">If you continue at this level, you will read %d books a month</span><span class="darkcyen">\n</span><span>"</span><span class="blue">,a*30</span><span>);</span>
+
+    <span>}</span>
+        </pre>
+      </code>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <a href="https://www.facebook.com/gammal.tech/"><img src="img/64e265364151507013cf141b_f_logo_RGB-Blue_100.png" alt=""></a>
+    <a href="https://wa.me/+201033998844"><img src="img/647f2173ace38f4413403b96_WhatsApp.svg.png" alt=""></a>
+    <a href="https://www.tiktok.com/@gammal.tech"><img src="img/64e266856b1a89cb5200d5f1_TikTok_Icon_Black_Circle-p-500.png" alt=""></a>
+    <a href="https://www.instagram.com/gammal.tech"><img src="img/64e26b074cc90679fbbaf7a5_instagram smaller.png" alt=""></a>
+    <a href="https://www.linkedin.com/company/gammal-tech"><img src="img/64e448786043d1ebebc36d9b_LI-In-Bug.png" alt=""></a>
+    <a href="https://www.youtube.com/c/GammalTech"><img src="img/5d2f5709d5e8838266f2a375_yt_icon_rgb.png" alt=""></a>
+  </div>
+  <script src="js/solve.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+</html>

@@ -22,3 +22,21 @@ window.onscroll = function (){
     scrollIcon.classList.remove("back-c");
   }
 };
+
+let icon = document.querySelectorAll(".btn i");
+let click = document.querySelector(".click");
+icon.forEach ( (ele)=> {
+  ele.addEventListener("click" , function(e){
+    icon.forEach((ele) => {
+    ele.classList.remove("active");
+  });
+  e.currentTarget.classList.add("active");
+  });
+});
+
+function morningPage(){
+  document.body.classList.remove("night-page");
+}
+function nightPage(){
+  document.body.classList.add("night-page");
+}

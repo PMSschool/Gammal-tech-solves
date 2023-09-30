@@ -159,6 +159,7 @@ header{
   width: 100%;
   padding: 16px;
   z-index:1;
+  top:0;
 }
 header.back-c{
   background-color: var(--first-color);
