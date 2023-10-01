@@ -110,6 +110,11 @@ let lessonList = [
 let divLesson = document.createElement("div");
 divLesson.classList.add("lessons");
 document.body.appendChild(divLesson);
+let headSec = document.createElement("h1");
+let textHeadSec= document.createTextNode(`C Programming`);
+headSec.appendChild(textHeadSec);
+headSec.classList.add("heade-sec");
+divLesson.appendChild(headSec);
 for (let i = 0 ; i < lessonList.length ; i++){
     let lessonGt = document.createElement("h4");
     let textLesson = document.createTextNode(`${lessonList[i]}`);

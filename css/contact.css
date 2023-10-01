@@ -61,7 +61,8 @@ body{
           "work work work work"
           "mail mail phone phone"
           "whatsapp whatsapp facebook facebook"
-          "instagram instagram youtube youtube";
+          "instagram instagram youtube youtube"
+          "tiktok tiktok linkedin linkedin";
 row-gap: 25px;
 column-gap:25px;
 width:75%;
@@ -73,13 +74,15 @@ width:75%;
 .facebook{grid-area: facebook; }
 .instagram{grid-area: instagram; }
 .youtube{grid-area: youtube; }
+.tiktok{grid-area: tiktok; }
+.linkedin{grid-area: linkedin; }
 
 .work{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--first-color);
+  background-color: white;
   border-radius: 18px;
   text-align: center;
 }
@@ -88,12 +91,14 @@ width:75%;
 .whatsapp,
 .facebook,
 .instagram,
-.youtube{
+.youtube,
+.tiktok,
+.linkedin{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: var(--first-color);
+  background-color: white;
   border-radius: 18px;
   padding: 35px 0px;
   text-align: center;
@@ -104,9 +109,13 @@ width:75%;
   font-size: 35px;
   color: #033838;
 }
+.container img{
+  width: 40px;
+}
 .container h3{
   font-size: 20px;
-  color: white;
+  color: var(--first-color);
+  font-weight: bold;
 }
 @media (max-width:767px){
   .container{
@@ -115,7 +124,7 @@ width:75%;
     width:100%;
   }
   .work{
-    padding:10px 54px;
+    padding:30px 54px;
   }
 }
 .contact a{

@@ -275,3 +275,38 @@ border-radius: 6px;
   flex-direction: row;
 }
 /* End Components */
+
+/* start head-sec */
+h1.heade-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  margin: 0 13px 30px 13px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+  font-size: 25px;
+  padding: 10px;
+  font-weight: bold;
+  width:80%;
+}
+ h1.heade-sec::before{
+  content: "";
+  background-color: var(--third-color);
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 35px;
+}
+ h1.heade-sec::after{
+  content: "";
+  background-color: var(--third-color);
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  border-radius: 35px;
+}
+/* end head-sec */
