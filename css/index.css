@@ -172,6 +172,7 @@ header ul {
 header ul li a {
   color: white;
   font-size: 20px;
+  text-decoration: none;
 }
 @media (min-width:768px){
   header .links .openbtn{
@@ -209,6 +210,7 @@ header ul li a {
     padding-top: 60px;
     flex-direction: column;
     align-items: start;
+    margin:0;
   }
   #main {
     transition: margin-left .5s;
@@ -226,6 +228,7 @@ header ul li a {
     color:white;
     padding:3px;
     text-decoration: none;
+    border-radius: 5px;
   }
 }
 /* end header */

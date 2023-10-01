@@ -172,7 +172,7 @@ span.copy{
 code:hover span.copy{
   display:flex;
 }
-i{
+code i{
   position: absolute;
   border-radius: 5px;
   right: 10px;

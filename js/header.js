@@ -35,8 +35,8 @@ icon.forEach ( (ele)=> {
 });
 
 function morningPage(){
-  document.body.classList.remove("night-page");
+  document.body.classList.add("night-page");
 }
 function nightPage(){
-  document.body.classList.add("night-page");
+  document.body.classList.remove("night-page");
 }

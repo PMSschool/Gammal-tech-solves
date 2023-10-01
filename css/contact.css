@@ -55,23 +55,6 @@ body{
 .contact{
   margin-top: 150px;
 }
-.contact h1{
-  box-shadow: 0 0 15px -4px;
-  width: 72%;
-  text-align: center;
-  color: black;
-  font-size: 37px;
-  background-color: transparent;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 3px 10px;
-  border-color: yellow black #6df98c aquamarine;
-  border-width: 2px;
-  border-style: solid;
-  border-radius: 10px;
-  transition: 1s;
-}
 .container{
   display:grid;
   grid-template-areas: 
@@ -137,8 +120,6 @@ width:75%;
 }
 .contact a{
   transition:0.5s;
-  position: relative;
-  text-align:center;
 }
 .contact a:hover{
   box-shadow: 0 0 30px -3px var(--first-color);
@@ -205,9 +186,9 @@ color:white;
 .night-page{
 background-color:var(--first-color);
 }
-.night-page .contact h1{
+/* .night-page .contact h1{
 color:white;
-}
+} */
 .night-page .work{
 background-color:white;
 }
