@@ -23,6 +23,7 @@ ul{
 
 body{
   font-family: "cairo" , sans-serif;
+  overflow:hidden;
 }
 
 .container{
@@ -51,7 +52,46 @@ body{
 }
 
 /* start loading */
-.loading{
+.loading {
+  background-color: #fff;
+  color: var(--second-color);
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 78px;
+  position: fixed;
+  z-index: 99999999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 15px solid var(--first-color);
+  border-bottom: 15px solid var(--first-color);
+}
+.loading img{
+  width:145px;
+}
+.loading:before {
+  content: "{";
+  display: inline-block;
+  animation: pulse 0.4s alternate infinite ease-in-out;
+}
+.loading:after {
+  content: "}";
+  display: inline-block;
+  animation: pulse 0.4s 0.3s alternate infinite ease-in-out;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+    
+/* .loading{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -66,6 +106,11 @@ body{
   animation-play-state: running;
   border-bottom:3px solid var(--first-color);
   border-top:3px solid var(--first-color);
+  position: fixed;
+  z-index: 999999999999999;
+  top: 0;
+  width: 100%;
+  background-color: white;
 }
 .loading img{
   width: 145px;
@@ -92,7 +137,7 @@ body{
   animation-fill-mode: backwards;
   animation-iteration-count: infinite;
   transition: 1s;
-}
+} */
 @keyframes lo-ri-li {
   0%{
     right: 43%;
