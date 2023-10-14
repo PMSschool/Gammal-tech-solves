@@ -59,40 +59,7 @@ body{
     padding: 150px 15px 15px 15px;
   }
 }
-/* .gt-qu{
-  padding-bottom: 90px; 
-} */
- h1.header-sec{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: white;
-  margin: 0 13px 30px 13px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px;
-  font-size: 25px;
-  padding: 10px;
-  font-weight: bold;
-}
- h1.header-sec::before{
-  content: "";
-  background-color: var(--third-color);
-  width: 4px;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  border-radius: 35px;
-}
- h1.header-sec::after{
-  content: "";
-  background-color: var(--third-color);
-  width: 4px;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  border-radius: 35px;
-}
+
 .que{
   background-color: white;
   padding: 17px;
@@ -111,6 +78,7 @@ body{
   align-items: center;
   transition: 1s;
   font-weight:bold;
+  margin: 0;
 }
 .que h4.ar{
   direction: rtl;

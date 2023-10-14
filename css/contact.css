@@ -67,6 +67,11 @@ row-gap: 25px;
 column-gap:25px;
 width:75%;
 }
+@media (min-width:768px){
+  .container{
+    width:80%;
+  }
+}
 .work{grid-area: work; }
 .email{grid-area: mail; }
 .phone{grid-area: phone; }
@@ -117,6 +122,11 @@ width:75%;
   color: var(--first-color);
   font-weight: bold;
 }
+@media (min-width:768px){
+  .work{
+    padding:30px 0;
+  }
+}
 @media (max-width:767px){
   .container{
     row-gap: 25px;
@@ -124,7 +134,7 @@ width:75%;
     width:100%;
   }
   .work{
-    padding:30px 54px;
+    padding:20px 54px;
   }
 }
 .contact a{

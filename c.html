@@ -5,15 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>C programming solves</title>
   <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/framework.css">
-  <link rel="stylesheet" href="css/index.css">
   <link rel="stylesheet" href="css/lessons.css">
 </head>
 <body id = "main">
   <header>
-    <img src="https://uploads-ssl.webflow.com/5d2cb3382be6ba1741dc013c/64e0fc5dfca9a83bf668bba2_New%20Logo%20Top%20Big.webp" alt="">
+    <img src="img/logo.webp" alt="">
     <div class="links">
       <div class="openbtn" onclick="openNav()">
         <span class="one"></span>
@@ -24,9 +22,27 @@
         <ul id="mySidebar" class="sidebar">
           <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
           <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li class="active"><a onclick="clickableDropdown()">Courses</a><i class="fa-solid fa-caret-down"></i>
+            <style>
+              li.active{
+                text-align:left;
+              }
+            </style>            
+            <script>
+              function clickableDropdown(){
+                let dropdown = document.querySelector("header ul li ul");
+                dropdown.classList.toggle("show");
+              }
+            </script>
+            <ul>
+              <li><a href="c.html">C programming</a></li>
+              <li><a href="cpp.html">C++ programming</a></li>
+              <li><a href="python.html">Python</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
+          
         </ul>
       </nav>
     </div>

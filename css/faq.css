@@ -51,57 +51,40 @@ body{
   }
 }
 
-div.lessons{
-  padding-top: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 35px;
+.question {
+  margin-top: 150px;
 }
-.lessons a{
-  width:80%;
-  display:flex;
+.question ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
   justify-content: center;
+  gap: 10px;
+  margin: auto;
+  width: 80%;
+  padding: 40px 0;
+}
+.question ul li {
+  width: 100%;
+  text-align: end;
+}
+.question ul li a {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.question ul li a h3 {
+  font-size: 21px;
+  background-color: white;
+  padding: 18px;
+  border-radius: 7px;
+  color: black;
+  box-shadow: 0 0 10px;
+  text-decoration: none;
+}
+.question ul li a h3:hover {
+  text-decoration: none;
 }
 @media (max-width:767px) {
-  .lessons a{
-    width:90%;
+  .question ul {
+    width: 90%;
   }
-}
-.lessons h4{
-  color: white;
-  padding: 15px 45px;
-  width: 100%;
-  text-align: center;
-  border-radius: 30px 15px 15px 8px;
-  background-color: white;
-  color: var(--first-color);
-  position: relative;
-  font-size: 20px;
-  font-weight: bold;
-}
-.lessons h4 span{
-  position: absolute;
-  left: 0px;
-  background-color: #ff914c;
-  padding: 10px 11px;
-  color: white;
-  border-radius: 11px 1px 35px 1px;
-  top: 0;
-  height: 84%;
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-}
-@media (min-width:768px){
-  .lessons{
-    margin-left: 45px;
-    margin-right: 45px;
-    padding-left: 45px;
-    padding-right: 45px;
-    }
-  }
-.lessons h4:hover{
-  text-decoration:solid;
-}
+}/*# sourceMappingURL=faq.css.map */

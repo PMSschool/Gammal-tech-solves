@@ -3,17 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GT loading</title>
+  <title>GammalTech solve</title>
   <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/framework.css">
-  <link rel="stylesheet" href="css/solve.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body id = "main">
   <header>
-    <img src="https://uploads-ssl.webflow.com/5d2cb3382be6ba1741dc013c/64e0fc5dfca9a83bf668bba2_New%20Logo%20Top%20Big.webp" alt="">
+    <img src="img/logo.webp" alt="">
     <div class="links">
       <div class="openbtn" onclick="openNav()">
         <span class="one"></span>
@@ -24,8 +21,25 @@
         <ul id="mySidebar" class="sidebar">
           <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
           <li><a class="active" href="index.html">Home</a></li>
-          <li><a href="courses.html">Courses</a></li>
-          <li><a href="#">FAQ</a></li>
+          <li class="active"><a onclick="clickableDropdown()">Courses</a><i class="fa-solid fa-caret-down"></i>
+            <style>
+              li.active{
+                text-align:left;
+              }
+            </style>            
+            <script>
+              function clickableDropdown(){
+                let dropdown = document.querySelector("header ul li ul");
+                dropdown.classList.toggle("show");
+              }
+            </script>
+            <ul>
+              <li><a href="c.html">C programming</a></li>
+              <li><a href="cpp.html">C++ programming</a></li>
+              <li><a href="python.html">Python</a></li>
+            </ul>
+          </li>
+          <li><a href="faq.html">FAQ</a></li>
           <li><a href="contact.html">Contact</a></li>
           
         </ul>
@@ -48,21 +62,19 @@
       <img src="img/5.png" alt="">
     </div>
   </div>
-  <!-- <div class="loading">
-    <img src="img/download (2).png" alt="">
-    <div class="cycle">
-      <span class="active"></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div> -->
-  <span class="loading">
-    <img src="img/download (2).png" alt="">
-  </span>
+
+  <div class="footer">
+    <a href="https://www.facebook.com/gammal.tech/"><img src="img/64e265364151507013cf141b_f_logo_RGB-Blue_100.png" alt=""></a>
+    <a href="https://wa.me/+201033998844"><img src="img/647f2173ace38f4413403b96_WhatsApp.svg.png" alt=""></a>
+    <a href="https://www.tiktok.com/@gammal.tech"><img src="img/64e266856b1a89cb5200d5f1_TikTok_Icon_Black_Circle-p-500.png" alt=""></a>
+    <a href="https://www.instagram.com/gammal.tech"><img src="img/64e26b074cc90679fbbaf7a5_instagram smaller.png" alt=""></a>
+    <a href="https://www.linkedin.com/company/gammal-tech"><img src="img/64e448786043d1ebebc36d9b_LI-In-Bug.png" alt=""></a>
+    <a href="https://www.youtube.com/c/GammalTech"><img src="img/5d2f5709d5e8838266f2a375_yt_icon_rgb.png" alt=""></a>
+  </div>
+
+  <div class="loading" ><img src="img/download (2).png" alt=""></div>
   <script src="js/jquery.min.js"></script>
-    <!-- <script src="js/jquery.sticky.js"></script> -->
-    <script src="js/loading-jq.js"></script>
-    <script src="js/header.js"></script>
+  <script src="js/loading-jq.js"></script>
+  <script src="js/header.js"></script>
 </body>
 </html>

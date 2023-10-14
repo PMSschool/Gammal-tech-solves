@@ -1,5 +1,7 @@
 
-
+a{
+  text-decoration:none;
+}
 :root {
 --blue-color: #0075ff;
 --blue-alt-color: #0d69d5;
@@ -283,14 +285,21 @@ h1.heade-sec{
   align-items: center;
   position: relative;
   background-color: white;
-  margin: 0 13px 30px 13px;
+  margin: auto;
+  margin-bottom: 25px;
   border-radius: 5px;
   box-shadow: 0 0 10px;
   font-size: 25px;
-  padding: 10px;
+  padding: 15px;
   font-weight: bold;
-  width:80%;
+  width: 80%;
 }
+@media (max-width:767px){
+  h1.heade-sec{
+    width: 90%;
+  }
+}
+
  h1.heade-sec::before{
   content: "";
   background-color: var(--third-color);
@@ -310,3 +319,231 @@ h1.heade-sec{
   border-radius: 35px;
 }
 /* end head-sec */
+
+/* start head-sec 2*/
+
+
+h1.header-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: white;
+  margin: 0 13px 30px 13px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+  font-size: 25px;
+  padding: 10px;
+  font-weight: bold;
+}
+ h1.header-sec::before{
+  content: "";
+  background-color: var(--third-color);
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  border-radius: 35px;
+}
+ h1.header-sec::after{
+  content: "";
+  background-color: var(--third-color);
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  border-radius: 35px;
+}
+/* end head-sec 2*/
+
+
+/* start loading */
+.loading {
+  background-color: #fff;
+  color: var(--second-color);
+  font-family: Consolas, Menlo, Monaco, monospace;
+  font-weight: bold;
+  font-size: 78px;
+  position: fixed;
+  z-index: 99999999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 2px;
+}
+.loading img{
+  width:145px;
+}
+.loading:before {
+  content: "{";
+  display: inline-block;
+  animation: pulse 0.4s alternate infinite ease-in-out;
+}
+.loading:after {
+  content: "}";
+  display: inline-block;
+  animation: pulse 0.4s 0.3s alternate infinite ease-in-out;
+}
+
+@keyframes pulse {
+  to {
+    transform: scale(0.8);
+    opacity: 0.5;
+  }
+}
+    
+
+
+/* start header*/
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 16px;
+  z-index:9999999999;
+  top:0;
+}
+header.back-c{
+  background-color: var(--first-color);
+}
+header ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+
+}
+header ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+header ul li i{
+  color: white;
+  margin-left: 12px;
+  margin-right: 10px;
+}
+header ul li ul{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  text-wrap: nowrap;
+  background-color: var(--first-color);
+  padding: 0;
+  text-align: start;
+  margin-top: 15px;
+  border-radius: 5px;
+  gap: 0;
+}
+header ul li ul.show{
+  display :flex;
+}
+header ul li ul li{
+  width:100%;
+  padding: 15px 25px;
+}
+header ul li ul li a{
+  font-size:16px;
+}
+header li ul li:hover{
+  background-color: var(--third-color);
+}
+@media (min-width:768px){
+  header .links .openbtn{
+    display: none;
+  }
+  header .links nav ul li a.closebtn{
+    display: none;
+  }
+}
+@media (max-width:767px){
+  header .links .openbtn{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+  header .links .openbtn span{
+    background-color: white;
+    width: 27px;
+    height: 2px;
+
+  }
+  header .links nav{
+    display:none;
+  }
+  header .links ul.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--first-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: start;
+    margin:0;
+  }
+  #main {
+    transition: margin-left .5s;
+    width:100%;
+  }
+  header .links nav ul li a.closebtn{
+    font-size: 35px;
+    position: absolute;
+    left: 80%;
+    top: 20px;
+  }
+  
+  header .links nav ul li a:hover{
+    background-color:var(--second-color);
+    color:white;
+    padding:3px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  header ul li ul.show{
+    display :flex;
+    position:relative;
+  }
+}
+/* end header */
+
+/* start footer */
+.footer{
+  display: flex;
+  background-color: white;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: 35px;
+  width:100%;
+  position: relative;
+}
+.footer a img{
+  width: 31px;
+  background-color: #d4e2f1;
+  padding: 5px;
+  border-radius: 5px;
+}
+.footer::before{
+  content: "";
+  position: absolute;
+  background-image: linear-gradient(to left, var(--blue-color) 25%, var(--orange-color) 25% , var(--orange-color) 50%,var(--green-color) 50% , var(--green-color) 75%,var(--red-color) 75%, var(--red-color) 100%);
+  width: 100%;
+  height: 3px;
+  left: 0;
+  top: 0;
+}
+/* end footer */
+
