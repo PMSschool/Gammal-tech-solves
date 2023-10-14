@@ -504,12 +504,16 @@ header li ul li:hover{
     top: 20px;
   }
   
-  header .links nav ul li a:hover{
+  header .links nav ul.sidebar li a:hover{
     background-color:var(--second-color);
     color:white;
     padding:3px;
     text-decoration: none;
     border-radius: 5px;
+  }
+  header .links nav ul.sidebar li ul li a:hover{
+    background-color:var(--third-color)!important;
+    text-decoration: none;
   }
   header ul li ul.show{
     display :flex;

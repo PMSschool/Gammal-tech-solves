@@ -158,12 +158,16 @@ header li ul li:hover{
     top: 20px;
   }
   
-  header .links nav ul li a:hover{
+  header .links nav ul.sidebar li a:hover{
     background-color:var(--second-color);
     color:white;
     padding:3px;
     text-decoration: none;
     border-radius: 5px;
+  }
+  header .links nav ul.sidebar li ul li a:hover{
+    background-color:var(--third-color)!important;
+    text-decoration: none;
   }
   header ul li ul.show{
     display :flex;
@@ -241,6 +245,7 @@ header li ul li:hover{
     text-align: center;
     margin: 0;
     z-index: 1;
+    width:370px;
   }
   .landing .content .text h1{
     line-height:50px;
@@ -313,17 +318,8 @@ header li ul li:hover{
   top: 0;
   justify-content: center;
   align-items: center;
-  gap: 60px;
+  gap: 55px;
   height: 100%;
-  top: 0;
-}
-.footer::before{
-  content: "";
-  position: absolute;
-  width: 2px;
-  height: 100%;
-  background-color: #ffffff85;
-  margin: auto;
 }
 .footer img{
   width: 31px;
@@ -331,6 +327,9 @@ header li ul li:hover{
   padding: 5px;
   border-radius: 5px;
 
+}
+.footer img:hover{
+  background-color:var(--first-color);
 }
 .footer a{
     z-index: 1;
@@ -344,7 +343,7 @@ header li ul li:hover{
     justify-content: center;
     align-items: center;
     gap: 30px;
-    bottom: 20px;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
